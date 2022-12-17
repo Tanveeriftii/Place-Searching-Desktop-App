@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6360880-3B3C-4694-B1E8-37517D88D566}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abooking.Designer.cs">
+      <DependentUpon>Abooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sdashboard.Designer.cs">
+      <DependentUpon>Sdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ahome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahome.Designer.cs">
+      <DependentUpon>Ahome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alogin.Designer.cs">
+      <DependentUpon>Alogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aregistration.Designer.cs">
+      <DependentUpon>Aregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cbooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cbooking.Designer.cs">
+      <DependentUpon>Cbooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chome.Designer.cs">
+      <DependentUpon>Chome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clogin.Designer.cs">
+      <DependentUpon>Clogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cmessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cmessage.Designer.cs">
+      <DependentUpon>Cmessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cregistration.Designer.cs">
+      <DependentUpon>Cregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sbooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sbooking.Designer.cs">
+      <DependentUpon>Sbooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seller.Designer.cs">
+      <DependentUpon>seller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Smessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Smessage.Designer.cs">
+      <DependentUpon>Smessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="openning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openning.Designer.cs">
+      <DependentUpon>openning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Place.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Place.Designer.cs">
+      <DependentUpon>Place.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sad.Designer.cs">
+      <DependentUpon>Sad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shome.Designer.cs">
+      <DependentUpon>Shome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Slogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Slogin.Designer.cs">
+      <DependentUpon>Slogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sregistration.Designer.cs">
+      <DependentUpon>Sregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Abooking.resx">
+      <DependentUpon>Abooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sdashboard.resx">
+      <DependentUpon>Sdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ahome.resx">
+      <DependentUpon>Ahome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alogin.resx">
+      <DependentUpon>Alogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aregistration.resx">
+      <DependentUpon>Aregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cbooking.resx">
+      <DependentUpon>Cbooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chome.resx">
+      <DependentUpon>Chome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clogin.resx">
+      <DependentUpon>Clogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cmessage.resx">
+      <DependentUpon>Cmessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cregistration.resx">
+      <DependentUpon>Cregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sbooking.resx">
+      <DependentUpon>Sbooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seller.resx">
+      <DependentUpon>seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Smessage.resx">
+      <DependentUpon>Smessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openning.resx">
+      <DependentUpon>openning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Place.resx">
+      <DependentUpon>Place.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sad.resx">
+      <DependentUpon>Sad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shome.resx">
+      <DependentUpon>Shome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slogin.resx">
+      <DependentUpon>Slogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sregistration.resx">
+      <DependentUpon>Sregistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18p.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
